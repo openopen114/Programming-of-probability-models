@@ -4,7 +4,7 @@ Book : Introduction to Probability Models, Tenth Edition Hardcover – December 
      by Sheldon M. Ross (Author)
 
 
-*<p>Drug_Testing.R  [R script]</p>
+*<font><b><i><u>Drug_Testing.R  [R script]</u></i></b></font>
 Demo for  " The Gambler's Ruin Problem to drug testing" Page.232<br />
 <br />
 <br />
