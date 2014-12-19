@@ -9,7 +9,7 @@ Book : Introduction to Probability Models, Tenth Edition Hardcover – December 
 <br />
 <br />
 *<font><b><u>Markov_Chains_Limiting_Probabilities.R   [R script]</u></b></font><br />
-<font><i>calculate steady states of markov chain</i></font><br />
+<font><i>compute steady states of markov chain</i></font><br />
 <br />
 <br />
 *<font><b><u>Erdos_Renyi_Model_Matlab_Code  [Matlab script]</u></b></font><br />
