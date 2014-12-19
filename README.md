@@ -10,7 +10,7 @@ Book : Introduction to Probability Models, Tenth Edition Hardcover – December 
 <br />
 <br />
 *<font><b><u>random_graph_conncet   [Matlab script]</u></b></font><br />
-<font><i>Demo for "best prize problem" Page.141</i></font><br />
+<font><i>Demo for "number of random graph connected components" Page.141</i></font><br />
 <br />
 <br />
 *<font><b><u>random_graph_E_connect  [Matlab script]</u></b></font><br />
