@@ -29,3 +29,7 @@ Book : Introduction to Probability Models, Tenth Edition Hardcover – December 
 <font><i>Demo for "Number of Bad Pair" and "Number of Isolated Point" on Erdos Renyi Model</i></font><br />
 <br />
 <br />
+*<font><b><u>distribution  [R script]</u></b></font><br />
+<font><i>Demo and plot for "normal + normal" and "log normal + log nrmal" </i></font><br />
+<br />
+<br />
