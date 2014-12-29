@@ -13,6 +13,12 @@
 #>source("distribution.R")
 #>str(norm_norm)
 #>norm_norm(1000,1,2,1000,3,4)
+#output:
+#        ____________
+#       |  pn1  pn3  |
+#       |  pn2  pn4  |
+#        ____________
+
 
 
 ########### lognorm_lognorm  ###########
@@ -25,6 +31,12 @@
 #>source("distribution.R")
 #>str(lognorm_lognorm)
 #>lognorm_lognorm(1000,0.1,1.1,1000,0.2,1.2)
+#output:
+#        ____________
+#       |  pl1  pl3  |
+#       |  pl2  pl4  |
+#        ____________
+
 
 #######################
 ######Distribution#####
