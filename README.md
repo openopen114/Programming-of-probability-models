@@ -33,3 +33,8 @@ Book : Introduction to Probability Models, Tenth Edition Hardcover – December 
 <font><i>Demo and plot for "normal + normal" and "log normal + log nrmal" </i></font><br />
 <br />
 <br />
+*<font><b><u>Random walk zero to N  [R script]</u></b></font><br />
+<font><i>Demo for "4.5.3 Using a Random Walk to Analyze a Probabilistic Algorithm<br />
+         for the Satisfiability Problem",Page.237 </i></font><br />
+<br />
+<br />
