@@ -9,7 +9,7 @@
 
 #run
 #>Random_Walk_Zero2N(N=10, p=0.6)
-#output: animation plot, GIF, HTML
+#output: animation plot, GIF, HTML;ggplot gif
 
 
 Random_Walk_Zero2N <- function( N = 10, p = 0.6 ){
@@ -36,8 +36,9 @@ Random_Walk_Zero2N <- function( N = 10, p = 0.6 ){
         assign("position_list", position_list, envir = .GlobalEnv)
     } 
     
-    
-    #animation
+    ####################
+    ### animation001 ###
+    ####################
     #set up option
     library(animation)
     aniopt <- ani.options(nmax = length(position_list),
@@ -53,7 +54,9 @@ Random_Walk_Zero2N <- function( N = 10, p = 0.6 ){
         lines(x,y)
         ani.pause()}
     
-    #GIF
+    ####################
+    ### animationGIF ###
+    ####################
     saveGIF({
         #animation using ani.pause()
         for (i in 1:length(position_list)) {
@@ -65,13 +68,14 @@ Random_Walk_Zero2N <- function( N = 10, p = 0.6 ){
             lines(x,y)
             ani.pause()}
              }, interval = 0.2,
-                movie.name = "randomwalk_demo.gif",
+                movie.name = "randomwalkz2n_demo1.gif",
                 ani.width = 600, 
                 ani.height = 600
         )
     
-    
-    #save HTML
+    #####################
+    ### animationHTML ###
+    #####################
     saveHTML({
         #animation using ani.pause()
         for (i in 1:length(position_list)) {
@@ -90,4 +94,40 @@ Random_Walk_Zero2N <- function( N = 10, p = 0.6 ){
        description = c("4.5.3 Using a Random Walk to Analyze a Probabilistic Algorithm for the Satisfiability Problem",
                        "page.237")
           )    
+    
+    
+    
+    ########################
+    ### animation ggplot ###
+    ########################
+    #animation using ggplot animation
+    #data
+    library(ggplot2)
+    df.randwalkz2n <- data.frame(x = 1:length(position_list),
+                     y = position_list)
+    
+    # ggplot single graph
+    draw.p.plot<-function(i){
+        p<-ggplot(df.randwalkz2n, aes(x,y)) +
+            geom_point(data=df.randwalkz2n[1:i,]) +
+            geom_line(data=df.randwalkz2n[1:i,], aes(x,y)) + 
+            scale_x_continuous(limits=c(0, length(position_list))) + 
+            scale_y_continuous(limits=c(0, N))
+        
+        print(p)
+    }
+    
+    
+    #loop all graph
+    loop.p.animate <- function() {
+        lapply(1:length(position_list), function(i) {
+            draw.p.plot(i)
+        })
+    }
+    
+    
+    #save GIF
+    saveGIF(loop.p.animate(), interval = .3,
+            movie.name="randomwalkz2n_demo2.gif")
+    
 }
