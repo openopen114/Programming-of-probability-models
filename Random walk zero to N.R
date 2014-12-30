@@ -36,10 +36,10 @@ Random_Walk_Zero2N <- function( N = 10, p = 0.6 ){
         assign("position_list", position_list, envir = .GlobalEnv)
     } 
     
-    ####################
-    ### animation001 ###
-    ####################
-    #set up option
+    ######################
+    ### animation plot ###
+    ######################
+    #set up option of animation
     library(animation)
     aniopt <- ani.options(nmax = length(position_list),
                           interval = 0.2)
@@ -54,9 +54,9 @@ Random_Walk_Zero2N <- function( N = 10, p = 0.6 ){
         lines(x,y)
         ani.pause()}
     
-    ####################
-    ### animationGIF ###
-    ####################
+    ########################
+    ### animation -> GIF ###
+    ########################
     saveGIF({
         #animation using ani.pause()
         for (i in 1:length(position_list)) {
@@ -73,9 +73,9 @@ Random_Walk_Zero2N <- function( N = 10, p = 0.6 ){
                 ani.height = 600
         )
     
-    #####################
-    ### animationHTML ###
-    #####################
+    #########################
+    ### animation -> HTML ###
+    #########################
     saveHTML({
         #animation using ani.pause()
         for (i in 1:length(position_list)) {
@@ -86,7 +86,7 @@ Random_Walk_Zero2N <- function( N = 10, p = 0.6 ){
             points(x,y)
             lines(x,y)
             ani.pause()}
-    }, img.name = "randomwalk",
+    }, img.name = "randomwalk_deom1",
        htmlfile = "Random_Walk_Zero2N.html",
        ani.height = 400, ani.width = 600,  
        interval = 0.2,
@@ -105,6 +105,7 @@ Random_Walk_Zero2N <- function( N = 10, p = 0.6 ){
     library(ggplot2)
     df.randwalkz2n <- data.frame(x = 1:length(position_list),
                      y = position_list)
+    
     
     # ggplot single graph
     draw.p.plot<-function(i){
@@ -126,8 +127,25 @@ Random_Walk_Zero2N <- function( N = 10, p = 0.6 ){
     }
     
     
-    #save GIF
+    ################################
+    ### animation -> GIF(ggplot) ###
+    ################################
     saveGIF(loop.p.animate(), interval = .3,
             movie.name="randomwalkz2n_demo2.gif")
+    
+    
+    
+    #################################
+    ### animation -> HTML(ggplot) ###
+    #################################
+    saveHTML(loop.p.animate(), img.name = "randomwalk_deom2",
+             htmlfile = "Random_Walk_Zero2N_deom2.html",
+             ani.height = 400, ani.width = 600,  
+             interval = 0.2,
+             title = "demo_2",
+             description = c("4.5.3 Using a Random Walk to Analyze a Probabilistic Algorithm for the Satisfiability Problem",
+                "page.237")
+             )    
+    
     
 }
