@@ -11,6 +11,16 @@
 #>Random_Walk_Zero2N(N=10, p=0.6)
 #output: animation plot, GIF, HTML;ggplot gif
 
+#Warning messages: for error saving ".gif" file on "Windows" using imagemagick
+#Error Saving .gif video using windows with animation library
+#link:https://github.com/yihui/animation/issues/55
+# install the development version below than 
+#>install.packages('devtools')
+#>library(devtools)
+#>install_github("yihui/animation")
+#>library(animation)
+#>saveGIF({for (i in 1:10) plot(runif(10), ylim = 0:1)})
+
 
 Random_Walk_Zero2N <- function( N = 10, p = 0.6 ){
     
