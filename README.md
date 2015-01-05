@@ -6,11 +6,11 @@ Book : Introduction to Probability Models, Tenth Edition Hardcover – December 
 <br />
 <br />
 *<font><b><u>Best_Prize_Problem  [Matlab script]</u></b></font><br />
-<font><i>Demo for "best prize problem" Page.126</i></font><br />
+<font><i>demonstration of "best prize problem" Page.126</i></font><br />
 <br />
 <br />
 *<font><b><u>random_graph_conncet   [Matlab script]</u></b></font><br />
-<font><i>Demo for "number of random graph connected components" Page.141</i></font><br />
+<font><i>demonstration of "number of random graph connected components" Page.141</i></font><br />
 <br />
 <br />
 *<font><b><u>random_graph_E_connect  [Matlab script]</u></b></font><br />
@@ -18,7 +18,7 @@ Book : Introduction to Probability Models, Tenth Edition Hardcover – December 
 <br />
 <br />
 *<font><b><u>Drug_Testing.R  [R script]</u></b></font><br />
-<font><i>Demo for  " The Gambler's Ruin Problem to drug testing" Page.232</i></font><br />
+<font><i>demonstration of  " The Gambler's Ruin Problem to drug testing" Page.232</i></font><br />
 <br />
 <br />
 *<font><b><u>Markov_Chains_Limiting_Probabilities.R   [R script]</u></b></font><br />
@@ -26,7 +26,7 @@ Book : Introduction to Probability Models, Tenth Edition Hardcover – December 
 <br />
 <br />
 *<font><b><u>Erdos_Renyi_Model_Matlab_Code  [Matlab script]</u></b></font><br />
-<font><i>Demo for "Number of Bad Pair" and "Number of Isolated Point" on Erdos Renyi Model</i></font><br />
+<font><i>demonstration of "Number of Bad Pair" and "Number of Isolated Point" on Erdos Renyi Model</i></font><br />
 <br />
 <br />
 *<font><b><u>distribution  [R script]</u></b></font><br />
@@ -34,7 +34,7 @@ Book : Introduction to Probability Models, Tenth Edition Hardcover – December 
 <br />
 <br />
 *<font><b><u>Random walk zero to N  [R script]</u></b></font><br />
-<font><i>Demo for "4.5.3 Using a Random Walk to Analyze a Probabilistic Algorithm<br />
+<font><i>demonstration of "4.5.3 Using a Random Walk to Analyze a Probabilistic Algorithm<br />
          for the Satisfiability Problem",Page.237 </i></font><br />
 <br />
 <br />
