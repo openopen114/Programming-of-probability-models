@@ -20,7 +20,7 @@ num_of_ip=0;  %ip=isolated point
 for i=1:1:N
     for j=(i+1):1:N
         
-        rand_num=rand()
+        rand_num=rand();
            if rand_num<=p  %'connect'
                
                i_idx=[i_idx,i,j];
