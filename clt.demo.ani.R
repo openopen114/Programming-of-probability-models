@@ -5,10 +5,12 @@
 #function: clt.demo.ani()
 #default : 
 #nsample = 50, ntrial = 30
+# data form rnorm( nsample, mean=0, sd=1)
+
 
 #run
 #>source("clt.demo.ani.R")
-#>clt.demo.ani(30,5)
+#>clt.demo.ani(30,15)
 
 clt.demo.ani <- function( nsample = 50, ntrial = 30){
     
@@ -21,8 +23,8 @@ clt.demo.ani <- function( nsample = 50, ntrial = 30){
     
     #global "rdata"
     assign("rdata", rdata, envir = .GlobalEnv)
-    
-    
+    assign("nsample", nsample, envir = .GlobalEnv)
+    assign("ntrial", ntrial, envir = .GlobalEnv)
     
     #animation using ggplot animation
     #data
@@ -68,4 +70,21 @@ clt.demo.ani <- function( nsample = 50, ntrial = 30){
              description = "Demonstration of the Central Limit Theorem"
     )    
     
+    
+    
+    
+    ### use animation package function "clt.ani"
+    oopt = ani.options(interval = 0.2, nmax = ntrial)
+    daterecord <- paste("cltani",date(),sep=" ")
+    dt <- gsub(" {0,}","",daterecord) # no space
+    saveHTML(clt.ani(obs = nsample, FUN = rnorm, mean = 0, sd = 1),
+             img.name = dt,
+             htmlfile = "clt.ani.func.demo.html",
+             ani.height = 400, ani.width = 600,  
+             interval = 0.2,
+             title = "clt.ani.func.demo",
+             description = "Demonstration of the Central Limit Theorem"
+    )  
+    
 }
+
