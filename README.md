@@ -38,3 +38,6 @@ Book : Introduction to Probability Models, Tenth Edition Hardcover – December 
          for the Satisfiability Problem",Page.237 </i></font><br />
 <br />
 <br />
+*<font><b><u>clt.demo.ani  [R script]</u></b></font><br />
+<font><i>Demonstration of the Central Limit Theorem<br /> </i></font><br />
+  
