@@ -61,7 +61,8 @@ clt.demo.ani <- function( nsample = 50, ntrial = 30){
     #save HTML
     
     daterecord <- date()
-    dt <- gsub(" {0,}","",daterecord) # no space
+    dts <- gsub(" {0,}","",daterecord) # no " space "
+    dt <- gsub(":",replacement="_",dts) # no " Colon "
     saveHTML(loop.p.animate(), img.name = dt,
              htmlfile = "cltdemo.html",
              ani.height = 400, ani.width = 600,  
@@ -76,7 +77,8 @@ clt.demo.ani <- function( nsample = 50, ntrial = 30){
     ### use animation package function "clt.ani"
     oopt = ani.options(interval = 0.2, nmax = ntrial)
     daterecord <- paste("cltani",date(),sep=" ")
-    dt <- gsub(" {0,}","",daterecord) # no space
+    dts <- gsub(" {0,}","",daterecord) # no " space "
+    dt <- gsub(":",replacement="_",dts) # no " Colon "
     saveHTML(clt.ani(obs = nsample, FUN = rnorm, mean = 0, sd = 1),
              img.name = dt,
              htmlfile = "clt.ani.func.demo.html",
@@ -87,4 +89,6 @@ clt.demo.ani <- function( nsample = 50, ntrial = 30){
     )  
     
 }
+
+
 
